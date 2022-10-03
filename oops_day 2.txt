@@ -1,0 +1,83 @@
+Assignment Day-2
+1.Given an entity named Television, identify its attributes and explain how will you do Abstraction? 
+ 
+Television Attributes:
+1.screen
+2.size
+3.audio/video
+5.color
+6.connecting wires
+7.speakers
+
+Abstraction is process of hiding the unnecessary characteristics in order to reduce it to set of essential characteristics. In Television we know how to operate it using remote and how to select particular video which is useful for the user. You don’t need to know the internal process/connection of television like how it is displaying audio and video.
+
+
+2. Given an entity named Hospital, explain Encapsulation with respect to it. 
+
+Hospital Attributes:
+
+1.administration
+2.Doctors
+3.patients
+4.equipment
+5.cleaning staff
+6.nurse
+
+Encapsulation is process of wrapping code and data into a single unit.
+   
+ In Hospital, details regarding patient and operation and administration will be kept private.
+ Whereas we can get accesss to other attributes.
+
+
+
+
+
+
+
+
+3.Given an entity named TrafficSignal, explain Polymorphism with respect to it. 
+
+Traffic signal attributes:
+
+1.controls
+2.signals
+3.communication
+4.feild equipment
+5.sensors
+
+Polymorphism is defined as the ability of a message to be displayed in more than one form. poly means “many” and morph means “forms”.
+
+In traffic signal, if the traffic is low then the controls will be with fixed time. In case of heavy traffic then it will be different form of dealing the traffic by communication and changing signal timing and route diversion etc.
+
+
+4. Given an entity named BroadBandConnection, explain inheritance with respect to it. 
+
+
+ BroadBandConnection attributes:
+1.Fiber
+2.bandwidth
+3.speed
+4.customer service
+5.consistency
+6.package
+Inheritance is a mechanism in java by which one object is allowed to inherit the features(fields and methods) of a parent object. It can also have its own behaviour
+
+    In broadband connection, Speed, bandwidth, consistency are the child class which inherit by the behaviour of parent class(broadband connection).
+
+
+5.Given an entity named MobilePhone, identify its static & dynamic attributes. 
+
+Static attributes: attributes which cannot be modified or removed
+
+1.RAM
+2.Camera
+3.in-built apps like contacts, file manager and settings
+
+
+Dynamic attributes: attributes which can be added or deleted
+
+1.Themes/Wallpaper
+2.font
+3.apps
+4.brightness
+
