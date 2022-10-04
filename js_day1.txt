@@ -1,0 +1,304 @@
+ 
+1.Array of 10
+
+var nums= [0,1,2,3,4,5,6,7,8,9];
+var maxOne= 0;
+var maxSecond= 0;
+
+for(var i =0; i < nums.length; i++ ){
+
+if(maxOne < nums[i]){
+    maxSecond= maxOne;
+    maxOne = nums[i];
+}
+else if(maxSecond < nums[i]){
+    maxSecond= nums[i];
+}
+}
+
+window.alert("The biggest number is: " + maxOne + "\nThe Second biggest number is: " + maxSecond);
+
+
+
+2.Reverse a digit
+
+var n='42156';
+function reverse_a_number(n)
+{
+	n = n + "";
+	return n.split("").reverse().join("");
+}
+console.log(Number(reverse_a_number(n)));
+
+
+
+3.Reverse string
+
+function reverseString(str) {
+
+   
+    let newString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+
+
+var string="hema";
+
+const result = reverseString(string);
+console.log(result);
+
+
+4.
+
+
+
+let first = -1, second = -1;
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+
+       for (let i = 0; i <= arr.length - 1; i++) {
+            if (arr[i] > first) {
+                second = first;
+                first = arr[i];
+            }
+            else if (arr[i] > second && arr[i] != first) {
+                second = arr[i];
+            }
+        }
+        console.log(first);
+        console.log(second);
+
+
+
+
+
+
+
+5.
+
+
+
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < array.length; i++) {
+    for (let j = i + 1; j < array.length; j++) {
+        let temp = 0;
+        if (array[i] <= array[j]) {
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
+}
+console.log(array);
+
+
+
+
+
+6.Even numbers
+
+
+myinputarr=[3,5,5,6,34,65,32,46]
+
+var sum1=0;
+
+for(let element of myinputarr){
+
+    // console.log(element);
+
+    if(element%2==0){
+
+        sum1 += element;
+
+    }
+
+}
+
+if(sum1==0){
+
+    console.log("No even numbers found");
+
+}
+
+else{
+
+    console.log(sum1);
+
+}
+
+
+
+
+7.factorial
+
+
+const array1=[2,3,4,5,6];
+
+
+
+function fact(num){  
+
+    var i, f;  
+
+    f = 1;   
+
+    for(i = 1; i <= num; i++)    
+
+    {  
+
+    f = f * i;  
+
+    }      
+
+    return f;
+
+    }  
+
+const facto= [];
+
+for(let i=0; i<5; i++){
+
+    facto.push(fact(i));
+
+}
+
+console.log(facto);
+
+
+
+
+8.Vowels
+
+
+const vowels = ["a", "e", "i", "o", "u"]
+
+
+
+function countVowel(str) {
+
+    // initialize count
+
+    let count = 0;
+
+    const vow=[];
+
+
+
+    // loop through string to test if each character is a vowel
+
+    for (let letter of str.toLowerCase()) {
+
+        if (vowels.includes(letter)) {
+
+            vow.push(letter);
+
+            count++;
+
+        }
+
+    }
+
+    const uniqueCount = new Set(vow).size;
+
+    // console.log(uniqueCount);
+
+
+
+    // return number of vowels
+
+    return uniqueCount;
+
+}
+
+
+
+// take input
+
+const string = "CITIUSTECH";
+
+
+
+const result = countVowel(string);
+
+
+
+console.log(result);
+
+9.array of strings
+
+var myinputarr = [];
+
+var size = 2; // Array size
+
+for(var a=0; a<size; a++)
+
+{
+
+     
+
+     
+
+    myinputarr[a] = prompt('Enter array string ' + (a+1));
+
+}
+
+//user eneter array
+
+console.log(myinputarr);
+
+const arr1=[];
+
+for(element of myinputarr){
+
+    str=element.split('').reverse().join('');
+
+    const capitalized = str.charAt(0).toUpperCase()+str.slice(1);
+
+    // console.log(capitalized);
+
+    str1=capitalized.split('').reverse().join('');
+
+    // console.log(str1);
+
+    arr1.push(str1);
+
+    
+
+}
+
+myinputarr=[];
+
+myinputarr = myinputarr.concat(arr1);
+
+console.log(myinputarr);
+
+
+10.repeted digits
+function countRepeatingDigits(N)
+{
+	var res = 0;
+	var cnt =Array(10).fill(0);
+
+	while (N > 0) {
+		var rem = N % 10;
+		cnt[rem]++;
+		N = Math.floor(N / 10);
+	}
+
+	for (var i = 0; i < 10; i++) {
+
+		if (cnt[i] > 1) {
+
+			res++;
+		}
+	}
+	return res;
+}
+var N=7312180905;
+
+console.log(countRepeatingDigits(N));
+
