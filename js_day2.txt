@@ -1,0 +1,153 @@
+1.
+
+function factorial( num)
+{
+    let fact=1;
+    for(let i=1;i<=num;i++)
+    {
+        fact=fact*i;
+    }
+    return fact;
+}
+let result=factorial(3);
+console.log(result);
+
+
+
+2.
+
+const sum=(a,b)=>a+b;
+console.log('sum is: '+sum(5,7));
+
+
+3.
+
+function arg(...a)
+{
+    total=a.length;
+    console.log('argumnets are: '+a);
+    console.log('total number of arguments passed: '+total )
+}
+arg(1,2);
+
+
+4.
+
+function login(username='CT',password='CT')
+{
+    console.log('the  user name is: '+username);
+    console.log('the  password is: '+password); 
+}
+login();
+
+5.
+
+const vehicle = {
+    vehicleid: 2689,
+    brand: 'Hundai',
+    model: '2021',
+    varient: 'two year',
+    specification: {
+        firstGear: function () {
+            console.log('vehicle is in 1st gear');
+
+        },
+        secondGear: function () {
+            console.log('vehicle is in 2nd gear');
+
+        },
+        maxSpeed: 120,
+        changeGear: function () {
+            return (this.firstGear(), this.secondGear());
+
+        },
+
+
+    },
+
+
+}
+console.log(` vehicleid is:${vehicle.vehicleid}`);
+console.log(` vehicle brand is:${vehicle.brand}`);
+console.log(` vehicle model is:${vehicle.model}`);
+console.log(` vehicle varient is:${vehicle.varient}`);
+vehicle.specification.changeGear();
+console.log(vehicle.specification.maxSpeed);
+
+6.
+
+const factorial = (num) => {
+    var fact = 1;
+    for (let i = 1; i <= num; i++) {
+
+        fact = fact * i;
+    }
+    return fact;
+
+}
+
+
+console.log(`the factorial of number using arrow function is:${factorial(3)}`);
+
+
+7.
+
+const vehicle = {
+    vehicleid: 2689,
+    brand: 'Hundai',
+    model: '2021',
+    varient: 'two year',
+    specification: {
+        firstGear: function () {
+            console.log('vehicle is in 1st gear');
+
+        },
+        secondGear: function () {
+            console.log('vehicle is in 2nd gear');
+
+        },
+        maxSpeed: 120,
+        changeGear: function () {
+            return (this.firstGear(), this.secondGear());
+
+        },
+
+
+    },
+
+
+}
+const showVehicleDetails = (vehicle) => {
+    console.log(`The vehicleid is:${vehicle.vehicleid}`);
+console.log(`The vehicle brand is:${vehicle.brand}`);
+console.log(`The vehicle model is:${vehicle.model}`);
+console.log(`The vehicle varient is:${vehicle.varient}`);
+console.log(`The maximum speed is:${vehicle.specification.maxSpeed}`);
+}
+showVehicleDetails(vehicle);
+
+
+8.
+
+
+function sum(a=1,b=0,...c)
+{
+     var result=a+b
+     for( let i=0;i<c.length;i++)
+     {
+        result += c[i]
+     }
+     return result;
+
+    }
+    console.log(`sum:${sum()}`);
+
+
+9.
+
+function displayMax(arg1, arg2, arg3) {
+    return Math.max(arg1, arg2, arg3);
+}
+
+
+console.log(`the maximum number is :${displayMax(4, 9, 7)}`);
